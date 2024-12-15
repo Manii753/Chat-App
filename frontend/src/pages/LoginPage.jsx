@@ -1,4 +1,4 @@
-import { MessageSquare, Lock , User, Eye,EyeClosed,Loader2} from "lucide-react";
+import { MessageSquare, Lock , User, Eye,EyeClosed,Loader2, Mail} from "lucide-react";
 import { useState } from "react";
 import useAuthStore from "../store/useAuthStore";
 import { Link } from "react-router-dom";
@@ -55,7 +55,7 @@ const LoginPage = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="size-5 text-base-content/40" />
+                  <Mail className="size-5 text-base-content/40" />
                 </div>
                 <input
                   type="text"
@@ -73,7 +73,7 @@ const LoginPage = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <User className="size-5 text-base-content/40" />
+                  <Lock className="size-5 text-base-content/40" />
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
