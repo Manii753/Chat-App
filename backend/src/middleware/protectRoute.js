@@ -27,8 +27,8 @@ export const protectRoute = async (req, res, next) => {
     next();
 
   
-  }catch{
-    console.log("Error in protectRoute middleware:", error);
+  }catch(err){
+    console.log("Error in protectRoute middleware:",err);
     return res.status(401).json({
       message: 'Unauthorized',
     });
